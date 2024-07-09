@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Baskervville+SC&display=swap'); */
+        /* @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap'); */
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            /* font-family: "Baskervville SC", serif; */
+            font-family: "Anton SC", sans-serif;
+            background-color: var(--maiN-color);
+
+        }
+
+        /* :root {
+            --font-family: "Anton SC", sans-serif;
+            --backgrouNd-color: rgb(21, 21, 21);
+            --color: white;
+
+        } */
+
+        :root {
+            --font-family: "Anton SC", sans-serif;
+            --foNt-family2: "Baskervville SC", serif;
+            --maiN-color: #0b112e;
+            --supportiNg-color: #ebf3fe;
+            --foNt-color: #424242;
+            --bg-color: #ffffff;
+            --headiNg-color: #000a19;
+            --para-color: #504e4d;
+
+        }
+
+        p {
+            color: white;
+        }
+
+        li {
+            color: rgb(121, 119, 119);
+        }
+
+
+        .Navdp {
+            height: 40px;
+            width: 40px;
+            display: flex;
+            border-radius: 40px;
+            margin-left: 20px;
+        }
+
+        .Navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* align-items: end; */
+            gap: 570px;
+            background-color: var(--maiN-color);
+            height: 50px;
+            padding: 5px 5px 5px 5px;
+            /* background-color: #021229; */
+            position: fixed;
+
+            & a {
+                text-decoration: none;
+                /* color: whitesmoke; */
+                color: #eeeff7;
+                font-weight: 600;
+                background-color: #021229;
+
+            }
+
+            & li {
+                list-style: none;
+                background-color: #021229;
+                /* gap: 50px; */
+            }
+
+
+        }
+
+        a:hover {
+            color: rgb(53, 79, 197);
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: #021229;
+        }
+
+        .Nav-Name {
+            /* margin-right: 630px; */
+            font-size: 11px;
+            background-color: #021229;
+        }
+
+        .coNtaiNer {
+            display: flex;
+            /* gap: 700px; */
+            justify-content: space-around;
+            align-items: center;
+            /* margin-top: -70px; */
+            /* gap: 10px; */
+        }
+
+        .c-img {
+            margin-top: 70px;
+            /* margin-right: 270px; */
+            /* position: fixed; */
+            /* background-color: white; */
+            /* width: 500px; */
+            background-color: #021229;
+
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--bg-color);
+        }
+
+        .Name {
+            margin-top: 70px;
+            /* margin-left: 300px; */
+            /* background-color: white; */
+        }
+
+        .srk {
+            width: 250px;
+            height: 250px;
+        }
+
+        Nav {
+            margin-right: px;
+        }
+
+        ul {
+            gap: 50px;
+        }
+
+        .wd {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -4px;
+                width: 7%;
+                height: 2px;
+                background-color: rgb(255, 255, 255);
+                transition: all 0.4s linear;
+            }
+
+            &:hover::before {
+                width: 62%;
+            }
+        }
+
+        .wd {
+            color: rgb(176, 170, 170);
+            font-size: 30px;
+        }
+
+        .Name h1 {
+            font-size: 46px;
+        }
+
+        .srkside2 {
+            font-size: 70px;
+            color: rgb(228, 225, 225);
+            /* font-style: italic; */
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .srkside1 {
+            font-size: 80px;
+            color: rgb(228, 225, 225);
+            font-weight: 800;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+        }
+
+        .aligN {
+            display: flex;
+            gap: 70px;
+        }
+
+        .Nilesh {
+            height: 50px;
+            width: 200px;
+            background-color: var(--supportiNg-color);
+            color: #000a19;
+
+        }
+
+        .email {
+            height: 50px;
+            width: 250px;
+            background-color: var(--supportiNg-color);
+            color: #000a19;
+        }
+
+        .btN {
+            background-color: rgb(7, 44, 176);
+            color: white;
+            margin-left: 615px;
+            padding: 15px 15px 15px 15px;
+            text-transform: capitalize;
+            font-weight: 450;
+            border: 2px solid rgb(248, 244, 244);
+            width: 150px;
+            font-size: 17px;
+        }
+
+        .fa-brands {
+            font-size: 30px;
+            color: white;
+        }
+
+        .fa-brands:hover {
+            font-size: 35px;
+            color: rgb(41, 248, 14);
+        }
+
+        input:focus {
+            border: 5px solid rgb(61, 24, 245);
+        }
+
+        textarea:focus {
+            border: 5px solid rgb(61, 24, 245);
+        }
+
+        #my-iNfo {
+
+            /* padding: 10px 40px 10px 40px;
+            margin-top: 50px; */
+            display: flex
+                /* grid-template-columns: 1fr 1fr; */
+
+
+        }
+
+        .No {
+            /* margin-top: -260px;
+            margin-left: -70px; */
+        }
+
+        .work {
+            height: 90VH;
+        }
+
+        .p1,
+        .p2 {
+            height: 380px;
+            aspect-ratio: 1.75;
+        }
+
+        .progress-bar {
+            width: 300px;
+            margin-bottom: 15px;
+            /* Added margin for spacing between bars */
+        }
+
+        .progress {
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 8px;
+            background-color: #3498db;
+            /* Default blue color */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            /* width: 100%; */
+            background-color: #2c3e50;
+            /* Darker blue for contrast */
+            transform-origin: left;
+            animation: progress-animation 2s ease-out forwards;
+        }
+
+        @keyframes progress-animation {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        /* Adjust widths for specific skills */
+        .progress-html::before {
+            background-color: #3498db;
+            /* Blue */
+            width: 90%;
+        }
+
+        .progress-css::before {
+            background-color: #9b59b6;
+            /* Purple */
+            width: 80%;
+        }
+
+        .progress-js::before {
+            background-color: #2ecc71;
+            /* Green */
+            width: 70%;
+        }
+
+        .progress-python::before {
+            background-color: #f1c40f;
+            /* Yellow */
+            width: 60%;
+        }
+
+        /* Label styles */
+        .label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .my-iNfo {
+            display: flex;
+            align-items: center;
+            margin: 30px 30px 30px 30px;
+            padding: 30px auto;
+            margin-left: -700px;
+            justify-content: center;
+        }
+
+        .srk {
+            height: 400px;
+            width: 400px;
+        }
+
+        .fa-solid {
+            font-size: 20px;
+            color: white;
+        }
+
+        .fa-solid:hover {
+            font-size: 35px;
+            color: rgb(41, 248, 14);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="Navbar">
+            <div class="Nav-left" style="display: flex; align-items: center; gap: 20px;">
+                <div class="Nav-dp"> <img src="Screenshot_20230802_141917_Chrome.jpg" alt="Nt" class="Navdp"></div>
+                <div class="Nav-Name">
+                    <h2>NILESH THAKUR</h2>
+                </div>
+            </div>
+            <div class="nAV">
+                <Nav>
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#my-iNfo">MY INFO</a></li>
+                        <li><a href="#mywork">WORK</a></li>
+                        <li><a href="#educatioN">EDUCATION</a></li>
+                        <li><a href="#CoNtact me">CONNECT</a></li>
+                    </ul>
+                </Nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="coNtaiNer" id="home" style="height: 100vh;">
+            <!-- <div class="No">
+                <a href="9328427134" style="text-decoration: none; color: white;">9328427134</a>
+
+            </div> -->
+            <div class="Name">
+                <h1 class="srkside1">NILESH</h1>
+
+                <h2 class="srkside2">THAKUR</h2>
+                <br>
+                <h2 class="wd">Web Developer</h2>
+            </div>
+            <div class="c-img">
+                <img src="Screenshot_20230802_141917_Chrome.jpg" alt="Nt" class="srk">
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="work" id="mywork">
+            <h1 style="text-align: center;">MY WORKS</h1><br><br><br><br>
+            <div class="project-aligN" style="display: flex; justify-content: space-evenly; align-items: center;">
+                <div class="part1"><a href="https://nileshthakur24.github.io/stallion/"><img src="p1.png" alt="project1"
+                            class="p1"></a></div>
+                <div class="part2"><a href="https://nileshthakur24.github.io/projects/"><img src="p2.png" alt="project2"
+                            class="p2"></a></div>
+            </div><br>
+            <div class="view" style="display: flex; justify-content: space-evenly;">
+                <h3>CLICK TO VIEW PROJECT👆</h3>
+                <h3>CLICK TO VIEW PROJECT👆</h3>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </section>
+    <section>
+        <div class="my-iNfo" id="my-iNfo" style="height: 100vh; display: flex; justify-content: space-evenly    ;">
+            <div class="side1">
+                <h2>ABOUT ME</h2><br>
+
+                <p style="width: 550px; text-transform: capitalize; color: #504e4d;">Passionate about creating websites
+                    with beautiful
+                    interfaces. A Fresher with a passion for web
+                    development seeking an entry-level position,my expertise lies iN HTML,CSS,JavaScript,and various
+                    design
+                    tools.</p>
+                <br>
+                <h2>TOOLS & TECH</h2><br>
+                <LI>Visual Studio Code
+                </LI>
+                <LI>Git & Github</LI>
+                <br>
+                <h2>HOBBIES</h2><br>
+                <li>Coding
+
+                </li>
+                <li>Fitness</li>
+                <li>Teaching</li>
+                <br>
+                <h2>DATABASES</h2><br>
+                <li>MySQL
+                </li>
+                <li> NoSQL</li>
+                <br>
+                <h2>EDUCATION</h2>
+                <br>
+                <div class="educatioN" id="educatioN">
+                    <h3>2022(Pursuing) BCA Degree</h3><br>
+                    <p style="color: #504e4d;">SDJ-InternatioNal College-VNSGU</p><br>
+                    <h3>2020-2022 High School</h3><br>
+                    <p style="color: #504e4d;">ScieNce(Biology)</p><br>
+                    <h3>2020 School</h3><br>
+                    <p style="color: #504e4d;">X-Passed with 79%</p><br>
+                </div>
+                <h2>LANGUAGES</h2><br>
+                <li>English
+                </li>
+                <li> Hindi</li>
+                <li>Gujarati</li>
+                <br>
+                <!-- <h2>Skills</h2><br>
+            <LI>HTML
+            </LI>
+            <LI>CSS</LI>
+            <li>JavaScript</li>
+            <li>Python</li> -->
+            </div>
+
+
+        </div>
+        <br><br><BR></BR></BR>
+        <div class="side2" style="margin-left: 50px;">
+            <h1>WEB-SKILLS</h1>
+            <br>
+            <div class="progress-bar">
+                <div class="label" style="color: rgb(171, 166, 166);">HTML</div>
+                <div class="progress progress-html">90%</div>
+            </div>
+            <div class="progress-bar">
+                <div class="label" style="color: rgb(171, 166, 166);">CSS</div>
+                <div class="progress progress-css">80%</div>
+            </div>
+            <div class="progress-bar">
+                <div class="label" style="color: rgb(171, 166, 166);">JavaScript</div>
+                <div class="progress progress-js">70%</div>
+            </div>
+            <div class="progress-bar">
+                <div class="label" style="color: rgb(171, 166, 166);">Python</div>
+                <div class="progress progress-python">60%</div>
+            </div>
+
+        </div>
+    </section>
+    <br><br><br><br>
+    <section>
+        <div class="coNNect" id="CoNtact me" style="height: 100vh;">
+            <h1 style="text-align: center;">CONTACT ME</h1>
+            <br><br>
+            <form action="https://formspree.io/f/mvgpoerj" method="post">
+                <div class="box">
+                    <div class="aligN">
+                        <div class="aligN1"><iNput type="text" placeholder="NILESH..." class="Nilesh"
+                                name="Name"></iNput></div>
+                        <div class="aligN2"><iNput type="email" placeholder="XYZ@GMAIL.COM" class="email"
+                                name="email"></iNput></div>
+                    </div>
+                    <br>
+                </div>
+                <div class="aligN3" style="margin-left: 431px; margin-top: 50px;">
+                    <textarea name="" id="" cols="75.5" rows="17" style=" background-color:var(--supportiNg-color) ;"
+                        placeholder="CREATE A WEBSITE FOR ME..." Name="message"></textarea>
+                </div>
+                <br><br>
+                <input type="submit" class="btN"></iNput>
+        </div>
+        </form>
+        <br>
+    </section>
+    <footer>
+        <div class="foot" style="margin-left: 470px; display: flex; gap: 100px; height: 20vh; margin-top: 50px;">
+            <br>
+            <div class="liNkid"> <a
+                    href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i
+                        class="fa-brands fa-linkedin"></i></a></div>
+            <div class="github"><a href="https://github.com/Nileshthakur24"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="iNsta"><a href="https://www.instagram.com/nileshthakur_7/"
+                    style="text-decoration: none; color: white;"><i class="fa-brands fa-instagram"></i>
+                    nileshthakur_7</a></div>
+
+        </div>
+        <hr>
+        <br>
+        <br>
+        <div class="lastt" style="display: flex; justify-content: space-evenly; height: 70px;">
+            <div class="p">
+                <p><i class="fa-solid fa-phone"></i><a href="tel: 9328427134"
+                        style="text-decoration: none; color: white;"> 9328427134</a> </p>
+            </div>
+            <br>
+            <div class="e">
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto: nileshthakur1407@gmail.com"
+                        style="text-decoration: none; color: white;">
+                        nileshthakur1407@gmail.com</a></p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
