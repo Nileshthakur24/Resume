@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NILESH THAKUR - RESUME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        html {
+            font-size: 100%;
+            scroll-behavior: smooth;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        li,
+        a,
+        label {
+            font-family: "Kanit", sans-serif;
+        }
+
+        .Navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1rem;
+            background-color: black;
+            color: white;
+            width: 100%;
+            position: fixed;
+
+            ul {
+                display: flex;
+                gap: 3.4rem;
+                list-style-type: none;
+
+            }
+
+            .logo-Name {
+                color: blue;
+            }
+
+        }
+
+        .icoNs {
+            margin-top: 4rem;
+        }
+
+        .Nilesh-pic {
+            border: 1rem solid black;
+            border-radius: 50%;
+            height: 25rem;
+            aspect-ratio: 1;
+            margin-top: 7rem;
+        }
+
+        .hero-sectioN {
+            display: flex;
+            align-items: center;
+            padding: 7rem 7rem;
+            width: 100%;
+        }
+
+
+
+        .MaiN-Name {
+            color: blue;
+            font-size: 1.7rem;
+
+        }
+
+
+        .educatioN {
+            background-color: rgb(208, 208, 208);
+            background-color: rgb(96, 115, 209);
+            background-color: rgb(33, 33, 245);
+            color: white;
+            padding: 1.5rem 1.5rem;
+            margin: 0.7rem 0.7rem;
+            border-radius: 2rem;
+            box-shadow: 0.2rem 0.2rem 0.3rem rgb(32, 32, 32);
+
+            .edu-list {
+                padding: 2rem 2rem;
+            }
+        }
+
+        .skills,
+        .projects,
+        .coNtact-me {
+            background-color: rgb(157, 170, 232);
+            background-color: rgb(96, 115, 209);
+            background-color: rgb(32, 32, 252);
+            color: white;
+            padding: 1.5rem 1.5rem;
+            margin: 0.7rem 0.7rem;
+            border-radius: 2rem;
+            box-shadow: 0.2rem 0.2rem 0.3rem rgb(32, 32, 32);
+        }
+
+        #file {
+
+            height: 2rem;
+            width: 50%;
+            color: white;
+
+
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #eb1313;
+            background-color: transparent;
+            background-color: rgb(8, 8, 130);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #f5f0f0;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #101011;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #f70606;
+        }
+
+        /* Responsive design */
+        @media (max-width: 900px) {
+            .container {
+                padding: 10px;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                padding: 8px;
+            }
+        }
+
+
+
+        .projects-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        #project1 {
+            height: 20rem;
+            aspect-ratio: 1.41;
+            border-radius: 2rem;
+            border: 0.5rem solid rgb(13, 13, 13);
+        }
+
+        #project1:hover {
+            scale: 1.2;
+        }
+
+        .loNg {
+            width: 70%;
+            height: 2rem;
+        }
+
+        #submitbtN {
+            font-size: 1.2rem;
+            color: antiquewhite;
+            padding: 0.5rem 0.5rem;
+            border-radius: 1rem;
+            background-color: rgb(247, 14, 14);
+            width: 11rem;
+            margin-left: 12rem;
+        }
+
+        .coNtact-me-ceNter {
+            margin-left: 27rem;
+            margin-right: 10rem;
+        }
+
+        .coNtact-me {
+            justify-content: center;
+        }
+
+        iNput:focus {
+            border: 4px solid rgb(9, 9, 9);
+        }
+
+        .iNput:focus {
+            border: 4px solid blue;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .MaiN-Name {
+            display: inline;
+        }
+
+        li a:hover {
+            color: rgb(76, 0, 255);
+        }
+
+        @media (max-width:750px) {
+            html {
+                font-size: 90%;
+            }
+
+            .Navbar {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .logo-Name {
+                    margin-left: 1.5rem;
+                }
+
+                ul {
+                    gap: 0.7rem;
+                }
+
+
+            }
+
+            .hero-sectioN {
+
+                display: flex;
+                flex-direction: column;
+
+                .Nt-img {
+                    order: 1;
+                }
+
+                .about {
+                    margin-top: 5rem;
+                    order: 2;
+                }
+
+            }
+
+            .coNtact-me-ceNter .iNput {
+                width: 70%;
+            }
+
+            #submitbtN {
+                margin-left: 0.1rem;
+            }
+
+            .coNtact-me-ceNter {
+                margin-left: 10rem;
+            }
+
+            .projects-list {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .adjust {
+                width: auto;
+            }
+
+            .Navbar Nav {
+                margin-top: -2rem;
+            }
+
+            .Nilesh-pic {
+                margin-left: -17rem;
+            }
+
+            #project1 {
+                aspect-ratio: 2.3;
+                height: 20rem;
+            }
+
+
+
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.7rem;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f0f1f2;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0707f4;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0416a1;
+            border-radius: 20px;
+        }
+
+        .Nt-img {
+            margin-left: 20rem;
+        }
+
+        .about {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width:1080px) {
+            html {
+                font-size: 90%;
+            }
+
+            .Navbar {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .logo-Name {
+                    margin-left: 1.5rem;
+                }
+
+                ul {
+                    gap: 0.7rem;
+                }
+
+
+            }
+
+            .hero-sectioN {
+
+                display: flex;
+                flex-direction: column;
+
+                .Nt-img {
+                    order: 1;
+                }
+
+                .about {
+                    margin-top: 5rem;
+                    order: 2;
+                }
+
+            }
+
+            .coNtact-me-ceNter .iNput {
+                width: 70%;
+            }
+
+            #submitbtN {
+                margin-left: 0.1rem;
+            }
+
+
+            .coNtact-me-ceNter {
+                margin-left: 10rem;
+            }
+
+            .projects-list {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .adjust {
+                width: auto;
+            }
+
+            .Navbar Nav {
+                margin-top: -2rem;
+            }
+
+            .Nilesh-pic {
+                margin-left: -17rem;
+            }
+
+            #project1 {
+                aspect-ratio: 2.3;
+                height: 20rem;
+            }
+
+
+
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.7rem;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f0f1f2;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0707f4;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0416a1;
+            border-radius: 20px;
+        }
+
+        .Nt-img {
+            margin-left: 20rem;
+        }
+
+        .about {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="Navbar">
+            <div class="logo-Name">
+                <h1><a href="#" style="color: blue;">WEB DEVELOPER</a></h1>
+            </div>
+            <Nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#educatioN">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#coNtact-me">Contact</a></li>
+                </ul>
+            </Nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="hero-sectioN" id="Home">
+                <div class="about">
+                    <p> Hello I'am </p>
+                    <p class="MaiN-Name">NILESH THAKUR</p>
+                    <P class="adjust">Ambitious web developer proficient for crafting
+                    </P>
+                    <p> responsive and visually appealing websites.in HTML, CSS,and
+                    </p>
+                    <p> JavaScript, with a passion for crafting responsive and visually appealing websites.</p>
+
+                </div>
+                <div class="Nt-img">
+                    <img src="default-profile-picture1.jpg" alt="NT" class="Nilesh-pic" data-aos="fade-up">
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section>
+            <div class="educatioN" id="educatioN">
+                <div class="edu-list">
+                    <h1 style="text-align: center;">EDUCATION</h1>
+                    <br>
+                    <h3>DEGREE </h3>
+                    <p>BCA 2022-2025</p>
+                    <p>SDJ International College</p>
+                    <br>
+                    <h3>XII SCIENCE(BIOLOGY)</h3>
+                    <p>T.&.TV Sarvajanik High School</p>
+                    <br>
+                    <h3>X-2020</h3>
+                    <p>Park Public School</p>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section>
+            <div class="skills" id="skills">
+                <h1 style="text-align: center;">SKILLS</h1>
+                <h1>HTML</h1>
+                <progress id="file" value="90" max="100"></progress><br>
+                <h1>CSS </h1>
+                <progress id="file" value="68" max="100"></progress><br>
+                <h1>JAVASCRIPT</h1>
+                <progress id="file" value="60" max="100"></progress><br>
+                <h1>PHP</h1>
+                <progress id="file" value="70" max="100"></progress><br>
+                <h1>SQL</h1>
+                <progress id="file" value="79" max="100"></progress>
+
+            </div>
+        </section>
+        <br>
+        <section>
+            <div class="projects" id="projects">
+                <h1 style="text-align: center;">PROJECTS</h1>
+                <p style="text-align: center;">CHECK OUT MY LATEST PROJECTS HERE...</p>
+                <p style="text-align: center;">CLICK TO VIEW</p>
+                <br>
+                <div class="projects-list">
+
+
+                    <div class="p1">
+                        <a href="https://spotifyclone2407.netlify.app/"><img src="p1.png" alt="" id="project1"></a>
+                        <p style="text-align: center;" data-aos="fade-up">Spotify Clone</p>
+                    </div>
+
+                    <div class="p1">
+                        <a href="https://hsf-jeet.netlify.app/"><img src="p2.png" alt="" id="project1"></a>
+                        <p style="text-align: center;" data-aos="fade-up">HSF-INDIA</p>
+                    </div>
+
+                    <div class="p1">
+                        <a href="https://responsive-eduhub.netlify.app/"><img src="p3.png" alt="" id="project1"></a>
+                        <P style="text-align: center;" data-aos="fade-up">EDUCATIONAL</P>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+        <br>
+        <section>
+            <div class="coNtact-me">
+                <h1 style="text-align: center;">Contact Me</h1>
+                <div class="container">
+                    <form action="https://formspree.io/f/mldrdknn" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Phone Number:</label>
+                            <input type="tel" id="number" name="number" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                    <br>
+                </div>
+                <div class="icoNs">
+                    <i class="fa-solid fa-envelope"></i><a href="mailto: nileshpersonal07@gmail.com"
+                        style="text-decoration: none; color: rgb(10, 10, 10);"> nileshpersonal07@gmail.com</a><br><br>
+                    <i class="fa-solid fa-phone"></i> <a href="tel:9328427134" style="color:black">
+                        9328427134</a><br><br>
+                    <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/nileshthakur_1407/"
+                        style="color:rgb(9, 9, 9)">Nileshthakur_1407</a><br><br>
+                    <i class="fa-brands fa-github"></i> <a href="https://github.com/Nileshthakur24"
+                        style="color:black">Nileshthakur24</a><br><br>
+                    <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/nilesh-thakur-a379a7284/"
+                        style="color:black">Nilesh Thakur</a><br><br>
+
+
+
+                </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
